@@ -1,23 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { Router } from "react-router-dom";
+
+const user = {
+  name: "jake",
+  image: "https://source.unsplash.com/Sg3XwuEpybU",
+  email: "1235@aaa.com",
+  phone: "123512355",
+  company: {
+    name: "テスト株式会社",
+  },
+  website: "https://google.com",
+};
 
 export const App = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Router />;
 };
